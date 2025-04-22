@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		DB58242C2DB6EF5900C3AA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB58240D2DB6EF5700C3AA5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB5824142DB6EF5700C3AA5E;
+			remoteInfo = lifecounter2;
+		};
+		DB5824362DB6EF5900C3AA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB58240D2DB6EF5700C3AA5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB5824142DB6EF5700C3AA5E;
+			remoteInfo = lifecounter2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB5824152DB6EF5700C3AA5E /* lifecounter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifecounter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB58242B2DB6EF5900C3AA5E /* lifecounter2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounter2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5824352DB6EF5900C3AA5E /* lifecounter2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounter2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DB58243D2DB6EF5900C3AA5E /* Exceptions for "lifecounter2" folder in "lifecounter2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DB5824142DB6EF5700C3AA5E /* lifecounter2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DB5824172DB6EF5700C3AA5E /* lifecounter2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DB58243D2DB6EF5900C3AA5E /* Exceptions for "lifecounter2" folder in "lifecounter2" target */,
+			);
+			path = lifecounter2;
+			sourceTree = "<group>";
+		};
+		DB58242E2DB6EF5900C3AA5E /* lifecounter2Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = lifecounter2Tests;
+			sourceTree = "<group>";
+		};
+		DB5824382DB6EF5900C3AA5E /* lifecounter2UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = lifecounter2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB5824122DB6EF5700C3AA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5824282DB6EF5900C3AA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5824322DB6EF5900C3AA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB58240C2DB6EF5700C3AA5E = {
+			isa = PBXGroup;
+			children = (
+				DB5824172DB6EF5700C3AA5E /* lifecounter2 */,
+				DB58242E2DB6EF5900C3AA5E /* lifecounter2Tests */,
+				DB5824382DB6EF5900C3AA5E /* lifecounter2UITests */,
+				DB5824162DB6EF5700C3AA5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB5824162DB6EF5700C3AA5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB5824152DB6EF5700C3AA5E /* lifecounter2.app */,
+				DB58242B2DB6EF5900C3AA5E /* lifecounter2Tests.xctest */,
+				DB5824352DB6EF5900C3AA5E /* lifecounter2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB5824142DB6EF5700C3AA5E /* lifecounter2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB58243E2DB6EF5900C3AA5E /* Build configuration list for PBXNativeTarget "lifecounter2" */;
+			buildPhases = (
+				DB5824112DB6EF5700C3AA5E /* Sources */,
+				DB5824122DB6EF5700C3AA5E /* Frameworks */,
+				DB5824132DB6EF5700C3AA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DB5824172DB6EF5700C3AA5E /* lifecounter2 */,
+			);
+			name = lifecounter2;
+			packageProductDependencies = (
+			);
+			productName = lifecounter2;
+			productReference = DB5824152DB6EF5700C3AA5E /* lifecounter2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB58242A2DB6EF5900C3AA5E /* lifecounter2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5824432DB6EF5900C3AA5E /* Build configuration list for PBXNativeTarget "lifecounter2Tests" */;
+			buildPhases = (
+				DB5824272DB6EF5900C3AA5E /* Sources */,
+				DB5824282DB6EF5900C3AA5E /* Frameworks */,
+				DB5824292DB6EF5900C3AA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB58242D2DB6EF5900C3AA5E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DB58242E2DB6EF5900C3AA5E /* lifecounter2Tests */,
+			);
+			name = lifecounter2Tests;
+			packageProductDependencies = (
+			);
+			productName = lifecounter2Tests;
+			productReference = DB58242B2DB6EF5900C3AA5E /* lifecounter2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB5824342DB6EF5900C3AA5E /* lifecounter2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5824462DB6EF5900C3AA5E /* Build configuration list for PBXNativeTarget "lifecounter2UITests" */;
+			buildPhases = (
+				DB5824312DB6EF5900C3AA5E /* Sources */,
+				DB5824322DB6EF5900C3AA5E /* Frameworks */,
+				DB5824332DB6EF5900C3AA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB5824372DB6EF5900C3AA5E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DB5824382DB6EF5900C3AA5E /* lifecounter2UITests */,
+			);
+			name = lifecounter2UITests;
+			packageProductDependencies = (
+			);
+			productName = lifecounter2UITests;
+			productReference = DB5824352DB6EF5900C3AA5E /* lifecounter2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB58240D2DB6EF5700C3AA5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					DB5824142DB6EF5700C3AA5E = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					DB58242A2DB6EF5900C3AA5E = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = DB5824142DB6EF5700C3AA5E;
+					};
+					DB5824342DB6EF5900C3AA5E = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = DB5824142DB6EF5700C3AA5E;
+					};
+				};
+			};
+			buildConfigurationList = DB5824102DB6EF5700C3AA5E /* Build configuration list for PBXProject "lifecounter2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB58240C2DB6EF5700C3AA5E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DB5824162DB6EF5700C3AA5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB5824142DB6EF5700C3AA5E /* lifecounter2 */,
+				DB58242A2DB6EF5900C3AA5E /* lifecounter2Tests */,
+				DB5824342DB6EF5900C3AA5E /* lifecounter2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB5824132DB6EF5700C3AA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5824292DB6EF5900C3AA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5824332DB6EF5900C3AA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB5824112DB6EF5700C3AA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5824272DB6EF5900C3AA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5824312DB6EF5900C3AA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB58242D2DB6EF5900C3AA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB5824142DB6EF5700C3AA5E /* lifecounter2 */;
+			targetProxy = DB58242C2DB6EF5900C3AA5E /* PBXContainerItemProxy */;
+		};
+		DB5824372DB6EF5900C3AA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB5824142DB6EF5700C3AA5E /* lifecounter2 */;
+			targetProxy = DB5824362DB6EF5900C3AA5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB58243F2DB6EF5900C3AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lifecounter2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.ischool.issabug.lifecounter2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB5824402DB6EF5900C3AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lifecounter2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.ischool.issabug.lifecounter2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB5824412DB6EF5900C3AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB5824422DB6EF5900C3AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB5824442DB6EF5900C3AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.ischool.issabug.lifecounter2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifecounter2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lifecounter2";
+			};
+			name = Debug;
+		};
+		DB5824452DB6EF5900C3AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.ischool.issabug.lifecounter2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifecounter2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lifecounter2";
+			};
+			name = Release;
+		};
+		DB5824472DB6EF5900C3AA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.ischool.issabug.lifecounter2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lifecounter2;
+			};
+			name = Debug;
+		};
+		DB5824482DB6EF5900C3AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.ischool.issabug.lifecounter2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lifecounter2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB5824102DB6EF5700C3AA5E /* Build configuration list for PBXProject "lifecounter2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5824412DB6EF5900C3AA5E /* Debug */,
+				DB5824422DB6EF5900C3AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB58243E2DB6EF5900C3AA5E /* Build configuration list for PBXNativeTarget "lifecounter2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB58243F2DB6EF5900C3AA5E /* Debug */,
+				DB5824402DB6EF5900C3AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5824432DB6EF5900C3AA5E /* Build configuration list for PBXNativeTarget "lifecounter2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5824442DB6EF5900C3AA5E /* Debug */,
+				DB5824452DB6EF5900C3AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5824462DB6EF5900C3AA5E /* Build configuration list for PBXNativeTarget "lifecounter2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5824472DB6EF5900C3AA5E /* Debug */,
+				DB5824482DB6EF5900C3AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB58240D2DB6EF5700C3AA5E /* Project object */;
+}
