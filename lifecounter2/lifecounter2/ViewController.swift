@@ -16,29 +16,49 @@ class ViewController: UIViewController, UITextFieldDelegate {
         p2Text.delegate = self
         p2Text.keyboardType = .numberPad
         addPlayerButton.isHidden = false
-        // Do any additional setup after loading the view.
+        
+        // adding first four players
+        for num in 1...4 {
+            let player = player(num)
+            players.append(player)
+
+            // UI
+            let playerView = PlayerView()
+            playerView.setupUI(player: player)
+            playersStackView.addArrangedSubview(playerView)
+//            print(player.num)
+        }
     }
     
-    var player1Lives = 20
-    var player2Lives = 20
     var numPlayers = 4
-    var players : [player] = [] // add first four players
+    var players : [player] = []// add first four players
     var gameStart = false // TODO: add true when life totals changed
     
-    @IBOutlet weak var player1LifeLabel: UILabel!
+    @IBOutlet weak var playersStackView: UIStackView!
     
-    @IBOutlet weak var player2LifeLabel: UILabel!
+    @IBOutlet weak var player1LifeLabel: UILabel!// TODO: delete
+    
+    @IBOutlet weak var player2LifeLabel: UILabel! // TODO: delete
     
     @IBOutlet weak var loserLabel: UILabel!
 
-        
     @IBOutlet weak var addPlayerButton: UIButton!
+    
+    @IBAction func historyButton(_ sender: Any) {
+        // shows history
+    }
     
     @IBAction func addPlayer(_ sender: Any) {
         if numPlayers < 8 {
             numPlayers += 1
-            players.append(player(numPlayers))
+            let newPlayer = player(numPlayers)
+            players.append(newPlayer)
             print(numPlayers)
+            
+            // UI
+            let playerView = PlayerView()
+            playerView.setupUI(player: newPlayer)
+            playersStackView.addArrangedSubview(playerView)
         } else {
             addPlayerButton.isHidden = true
         }
@@ -55,11 +75,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         updateLives(player: 1, lives: -1)
     }
     
-    @IBOutlet weak var p1Text: UITextField!
+    @IBOutlet weak var p1Text: UITextField! // TODO: delete
 
-    @IBOutlet weak var p1plusminus: UISegmentedControl!
+    @IBOutlet weak var p1plusminus: UISegmentedControl! // TODO: delete
         
-    @IBAction func p1LifeReq(_ sender: Any) {
+    @IBAction func p1LifeReq(_ sender: Any) { // TODO: delete
         if let text = p1Text.text, let number = Int(text) {
             if p1plusminus.selectedSegmentIndex == 1 {
                 updateLives(player: 1, lives: number * -1)
@@ -74,19 +94,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     // player 2
     
-    @IBAction func p2plus1(_ sender: Any) {
+    @IBAction func p2plus1(_ sender: Any) { // TODO: delete
         updateLives(player: 2, lives: 1)
     }
     
-    @IBAction func p2minus1(_ sender: Any) {
+    @IBAction func p2minus1(_ sender: Any) { // TODO: delete
         updateLives(player: 2, lives: -1)
     }
 
-    @IBOutlet weak var p2Text: UITextField!
+    @IBOutlet weak var p2Text: UITextField! // TODO: delete
 
-    @IBOutlet weak var p2plusminus: UISegmentedControl!
+    @IBOutlet weak var p2plusminus: UISegmentedControl! // TODO: delete
     
-    @IBAction func p2LifeReq(_ sender: Any) {
+    @IBAction func p2LifeReq(_ sender: Any) { // TODO: delete
         if let text = p2Text.text, let number = Int(text) {
             if p2plusminus.selectedSegmentIndex == 1 {
                 updateLives(player: 2, lives: number * -1)
@@ -105,21 +125,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             addPlayerButton.isHidden = true
         }
         // updates lives
-        if p == 1 {
-            player1Lives += l
-            player1LifeLabel.text = "\(player1Lives)"
-         } else {
-            player2Lives += l
-            player2LifeLabel.text = "\(player2Lives)"
-        }
+        players[p - 1].lives += l
+        // TODO: update the right life label for each player
+        player1LifeLabel.text = "\(players[p - 1].lives)"
+
         
         // checks for loss
-        if (player1Lives <= 0) {
+        if (players[0].lives <= 0) {
             loserLabel.text = "Player 1 LOSES!"
             print("Player 1 LOSES!")
             addPlayerButton.isHidden = false
-
-        } else if player2Lives <= 0 {
+        } else if players[1].lives <= 0 {
             loserLabel.text = "Player 2 LOSES!"
             print("Player 2 LOSES!")
             addPlayerButton.isHidden = false
@@ -140,5 +156,22 @@ class player {
     }
 }
 
+class PlayerView: UIView {
+    var player: player!
+    
+    let nameLabel = UILabel()
+    let lifeLabel = UILabel()
+    let plusButton = UIButton()
+    let minusButton = UIButton()
+    let applyButton = UIButton()
+    let plusMinus = UISegmentedControl(items: ["+", "-"])
+    let text = UITextField()
+    
+    func setupUI(player : player) {
+        self.player = player
+        nameLabel.text = "Player \(player.num)"
+        lifeLabel.text = "\(player.lives)"
+    }
+}
 
 
