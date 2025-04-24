@@ -23,9 +23,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             players.append(player)
 
             // UI
-            let playerView = PlayerView()
-            playerView.setupUI(player: player)
-            playersStackView.addArrangedSubview(playerView)
+//            let playerView = PlayerView()
+//            playerView.setupUI(player: player)
+//            playersStackView.addArrangedSubview(playerView)
 //            print(player.num)
         }
     }
@@ -33,6 +33,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var numPlayers = 4
     var players : [player] = []// add first four players
     var gameStart = false // TODO: add true when life totals changed
+    
+    var history : [String] = []
     
     @IBOutlet weak var playersStackView: UIStackView!
     
@@ -44,8 +46,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var addPlayerButton: UIButton!
     
+    
     @IBAction func historyButton(_ sender: Any) {
         // shows history
+            self.history
     }
     
     @IBAction func addPlayer(_ sender: Any) {
@@ -73,6 +77,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func p1minus1(_ sender: Any) {
         updateLives(player: 1, lives: -1)
+
     }
     
     @IBOutlet weak var p1Text: UITextField! // TODO: delete
@@ -83,6 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if let text = p1Text.text, let number = Int(text) {
             if p1plusminus.selectedSegmentIndex == 1 {
                 updateLives(player: 1, lives: number * -1)
+
             } else {
                 updateLives(player: 1, lives: number)
             }
@@ -124,10 +130,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if gameStart == true {
             addPlayerButton.isHidden = true
         }
+        
+        // updating history
+        if l > 0 {
+            history.append("Player \(p) gained \(l) life")
+        } else {
+            history.append("Player \(p) lost \(l * -1) life")
+        }
+        print(history)
+        
         // updates lives
         players[p - 1].lives += l
         // TODO: update the right life label for each player
-        player1LifeLabel.text = "\(players[p - 1].lives)"
+        if p == 1 {
+            player1LifeLabel.text = "\(players[0].lives)"
+         } else {
+             player2LifeLabel.text = "\(players[1].lives)"
+        }
 
         
         // checks for loss

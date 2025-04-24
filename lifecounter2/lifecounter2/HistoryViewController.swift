@@ -15,6 +15,8 @@ class HistoryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var history : [String] = []
+    
     @IBOutlet weak var historyPlace: UILabel!
     
     /*
