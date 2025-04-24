@@ -46,10 +46,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var addPlayerButton: UIButton!
     
-    
+
     @IBAction func historyButton(_ sender: Any) {
-        // shows history
-            self.history
+        let mainstoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = mainstoryboard.instantiateViewController(withIdentifier: "HistoryViewController") as! HistoryViewController
+        
+        //connecting other view controller
+        vc.history = self.history
+        self.present(vc, animated: true)
+
     }
     
     @IBAction func addPlayer(_ sender: Any) {
@@ -137,7 +142,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         } else {
             history.append("Player \(p) lost \(l * -1) life")
         }
-        print(history)
         
         // updates lives
         players[p - 1].lives += l
@@ -192,5 +196,7 @@ class PlayerView: UIView {
         lifeLabel.text = "\(player.lives)"
     }
 }
+
+
 
 

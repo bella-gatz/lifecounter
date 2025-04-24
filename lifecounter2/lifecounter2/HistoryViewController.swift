@@ -8,17 +8,23 @@
 import UIKit
 
 class HistoryViewController: UIViewController {
+    
+    var history : [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        historyPlace.text = history.joined(separator: "\n")
     }
     
-    var history : [String] = []
     
     @IBOutlet weak var historyPlace: UILabel!
     
+    func setUp(_ history: [String]) {
+        self.history = history
+        historyPlace?.text = history.joined(separator: "\n")
+//        self.historyPlace = historyPlace
+    }
+
     /*
     // MARK: - Navigation
 
